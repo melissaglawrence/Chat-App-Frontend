@@ -1,0 +1,260 @@
+/*---------top----------*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+    font-size: 16px;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body:before {
+    position: absolute;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    content: " ";
+width: 475px;
+height: 620px;
+    top: 0px;
+    left: -125px;
+    z-index: 2;
+    border-radius: 0px 0px 50% 50%;
+    z-index: -1;
+}
+
+body:after {
+    width: 475px;
+    height: 620px;
+    right: -125px;
+    content: " ";
+    bottom: 0;
+    position: absolute;
+    background-color:rgb(229, 223, 233);
+    border-radius: 50% 50% 0px 0px;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    border: 10px solid white;
+    border-radius: 30px;
+    width: 280px;
+    height: fit-content;
+    margin: 30px;
+    box-shadow: 5px 5px 25px rgb(192, 192, 192);
+}
+
+header img {
+    border-radius: 50%;
+    border: 2px solid white;
+    float: left;
+    margin-right: 10px;
+    margin-left: 15px;
+    vertical-align: center;
+}
+
+header {
+    background: linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    padding: 25px 10px;
+    font-size: .7em;
+    color: white;
+    position: relative;
+    border-radius: 20px 20px 5px 5px;
+}
+
+header:before {
+    position: absolute;
+    background-color: white;
+    content: " ";
+    width: 130px;
+    height: 25px;
+    top: -10px;
+    left: 70px;
+    z-index: 2;
+    border-radius: 0px 0px 10px 10px;
+}
+
+header .name {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+header p {
+    font-size: .9em;
+}
+
+.messages  {
+    background-color: hsl(270, 20%, 96%);
+    padding: 10px;
+    font-size: .6em;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.messages .left p {
+    color: hsl(276, 55%, 52%);
+    text-align: left;
+    padding: 3px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px 10px 10px 5px;
+    margin-bottom: 10px;
+    margin-right: 95px;
+    padding: 8px;
+    width: fit-content;
+}
+
+.messages .right p {
+    margin-bottom: 10px;
+    margin-left: 90px;
+    background-color: white;
+    border-radius: 10px 10px 5px 10px;
+    padding: 8px;
+    box-shadow: 1px 1px 5px rgb(219, 219, 219);
+    width: fit-content;
+}
+
+.messages .two {
+    margin-left: 55px;
+}
+
+.messages .images {
+    margin-left: 85px;
+    margin-bottom: 3px;
+}
+
+.messages img {
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.pricing .half {
+    background: linear-gradient(to left, hsl(264, 100%, 61%) ,hsl(293, 100%, 63%));
+    margin-bottom: 10px;
+    padding: 13px;
+    border-radius: 10px 10px 10px 5px;
+    margin-right: 70px;
+    color: white;
+    font-size: .7em;
+}
+
+.pricing .one {
+    background: linear-gradient(to left, hsl(264, 100%, 61%) ,hsl(293, 100%, 63%));
+    margin-bottom: 10px;
+    padding: 13px;
+    border-radius: 10px 10px 10px 5px;
+    margin-right: 70px;
+    color: white;
+    font-size: .7em;
+}
+
+.pricing span {
+    font-size: 1.8em;
+    font-weight: bold;
+    float: right;
+}
+
+.type {
+    background-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    color: rgb(207, 207, 207);
+    position: relative;
+}
+
+.type:before {
+    position: absolute;
+    content: " ";
+    color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: hsl(271, 36%, 24%);
+    top: 5px;
+    right: 5px;
+}
+
+/*----------BOTTOM-------------*/
+
+.bottom{
+    max-width: 50%;
+    margin: 0 0 0 76px;
+}
+
+.booking {
+    text-align: left;
+    position: relative;
+    max-width: 400px;
+}
+
+/* .booking:before {
+    content: " ";
+    top: 62px;
+    right: -250px;
+    position: absolute;
+    background-color:rgb(229, 223, 233);
+    width: 400px;
+    height: 430px;
+    border-radius: 50% 50% 0px 0px;
+    z-index: -1;
+} */
+
+.booking h2 {
+    font-size: 2em;
+    color: hsl(271, 36%, 24%);
+
+}
+
+.booking p {
+    color: hsl(270, 7%, 64%);
+    font-size: .8em;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+/*-----------FOOTER------------*/
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 80px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 810px) {
+body:before, body:after {
+    width: 275px;
+    height: 400px;
+}
+
+    .container{ 
+        flex-direction: column;
+    }
+
+    .bottom {
+        max-width: 50%;
+        margin: 30px auto;
+    }
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 36px;
+    }
+}
